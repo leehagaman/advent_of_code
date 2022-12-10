@@ -1,0 +1,3 @@
+inp z
+add z 3
+add z 5
