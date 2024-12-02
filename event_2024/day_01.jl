@@ -74,10 +74,10 @@ diffs = map(x -> abs(x[1] - x[2]), zip(sorted_input_1, sorted_input_2))
 sum(diffs)
 
 # ╔═╡ 8cde72eb-8dd0-49b1-86a1-beb9f43b68a0
-counts = counter(input_2)
+input_2_counts = counter(input_2)
 
 # ╔═╡ fa40c84d-1186-4edd-aa02-0ec9bbd4e58b
-input_1_in_input_2_counts_arr = map(x -> counts[x], input_1)
+input_1_in_input_2_counts_arr = map(x -> input_2_counts[x], input_1)
 
 # ╔═╡ f14449a0-50de-4ed9-9cc0-ef2d2b67992a
 similarities = input_1.*input_1_in_input_2_counts_arr
